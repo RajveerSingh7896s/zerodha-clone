@@ -104,7 +104,7 @@ function Navbar() {
                     e.preventDefault();
                     const token = localStorage.getItem("token"); // or check cookies
                     if (token) {
-                      window.location.href = "http://localhost:3002"; // dashboard URL
+                      window.location.href = "https://stocktradingwebsitedashboard.onrender.com"; // dashboard URL
                     } else {
                       alert("Please log in to access the dashboard.");
                       // Optionally redirect to login page:
