@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 3001;
 const uri = process.env.MONGODB_URL;
 
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3002"],
+  origin: ["https://stocktradingwebsitefrontend.onrender.com", "https://stocktradingwebsitedashboard.onrender.com"],
   credentials: true
 }));
 
