@@ -22,7 +22,7 @@ function Universe() {
       <div className="row text-center text-muted p-5">
         <div className="col">
           <img
-            src="media/images/zerodhaFundHouse.png"
+            src="media/images/zerodhaFundhouse.png"
             alt="zerodha fund house"
             style={{ width: "65%" }}
           />
@@ -45,8 +45,8 @@ function Universe() {
         </div>
         <div className="col">
           <img
-            src="media/images/zerodhaFundHouse.png"
-            alt="zerodha fund house"
+            src="media/images/tijori.svg"
+            alt="tijori"
             style={{ width: "65%" }}
           />
           <p className="universeSubPara pt-3">

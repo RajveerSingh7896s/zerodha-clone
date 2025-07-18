@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <nav class="navbar navbar-expand-lg border-bottom">
       <div class="container p-2">
@@ -98,8 +99,8 @@ function Navbar() {
               </li>
 
               <li className="nav-item px-3 mt-1">
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   onClick={(e) => {
                     e.preventDefault();
                     const token = localStorage.getItem("token"); // or check cookies
@@ -108,7 +109,7 @@ function Navbar() {
                     } else {
                       alert("Please log in to access the dashboard.");
                       // Optionally redirect to login page:
-                      window.location.href = "https://stocktradingwebsitefrontend.onrender.com/login";
+                      navigate("/login");
                     }
                   }}
                 >
@@ -117,7 +118,7 @@ function Navbar() {
                     style={{ width: "25%" }}
                     alt="Dashboard"
                   />
-                </a>
+                </Link>
               </li>
             </ul>
           </form>
