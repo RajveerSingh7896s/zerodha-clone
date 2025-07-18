@@ -17,7 +17,7 @@ function SignUp() {
     }
     try {
       const res = await axios.post(
-        "http://localhost:3001/signup",
+        "https://stocktradingwebsitebackend.onrender.com/signup",
         { username, email, password },
         { withCredentials: true }
       );

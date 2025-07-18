@@ -35,7 +35,7 @@ function Navbar() {
                     aria-current="page"
                     onClick={(e) => {
                       e.preventDefault();
-                      axios.post("http://localhost:3001/logout", {}, { withCredentials: true })
+                      axios.post("https://stocktradingwebsitebackend.onrender.com/logout", {}, { withCredentials: true })
                         .then((res) => {
                           if (res.data.success) {
                             alert("Logged out successfully");

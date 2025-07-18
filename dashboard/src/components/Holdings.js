@@ -7,7 +7,7 @@ const Holdings = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/allHoldings")
+      .get("https://stocktradingwebsitebackend.onrender.com/allHoldings")
       .then((res) => {
         setAllHoldings(res.data);
       })

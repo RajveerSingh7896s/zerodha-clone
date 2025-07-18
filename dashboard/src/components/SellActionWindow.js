@@ -13,7 +13,7 @@ const BuyActionWindow = ({ uid }) => {
   const generalContext = useContext(GeneralContext);
 
   const handleBuyClick = () => {
-    axios.post("http://localhost:3001/newOrder", {
+    axios.post("https://stocktradingwebsitebackend.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
