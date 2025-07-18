@@ -108,7 +108,7 @@ function Navbar() {
                     } else {
                       alert("Please log in to access the dashboard.");
                       // Optionally redirect to login page:
-                      window.location.href = "/login";
+                      window.location.href = "https://stocktradingwebsitefrontend.onrender.com/login";
                     }
                   }}
                 >
