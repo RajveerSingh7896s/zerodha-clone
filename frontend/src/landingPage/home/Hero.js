@@ -1,6 +1,8 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
   return (
     <div className="container p- mb-5">
       <div className="row text-center">
@@ -19,7 +21,7 @@ function Hero() {
           onClick={() => {if(localStorage.getItem("token") || sessionStorage.getItem("token")) {
             alert("You are already logged in , you can access dashboard");
           }else {
-            window.location.href = "/signup";}
+            navigate("/signup");}
           }}
         >
           Sign up for free

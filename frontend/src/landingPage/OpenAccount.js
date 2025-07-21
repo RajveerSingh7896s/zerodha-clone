@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function OpenAccount() {
+  const navigate = useNavigate();
   return (
     <div className="container p-5 mb-2">
       <div className="row text-center">
@@ -14,7 +16,7 @@ function OpenAccount() {
           onClick={() => {if(localStorage.getItem("token") || sessionStorage.getItem("token")) {
             alert("You are already logged in , you can access dashboard");
           }else {
-            window.location.href = "/signup";}
+            navigate("/signup");}
           }}
         >
           Sign up for free

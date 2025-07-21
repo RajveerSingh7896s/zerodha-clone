@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Universe() {
+  const navigate = useNavigate();
   return (
     <div className="container p-5">
       <div className="row text-center text-muted p-5">
@@ -100,7 +102,7 @@ function Universe() {
             ) {
               alert("You are already logged in , you can eccess dashboard");
             } else {
-              window.location.href = "/signup";
+              navigate("/signup");
             }
           }}
         >
