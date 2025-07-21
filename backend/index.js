@@ -272,12 +272,6 @@ app.post("/logout", (req, res) => {
   res.json({success : true , message: "Logged out" });
 });
 
-// app.use(express.static(path.join(__dirname, "../frontend/build")));
-// app.get("/(.*)", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
-// });
-
-
 
 mongoose
   .connect(uri)
