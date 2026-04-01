@@ -2,23 +2,23 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="container p-5">
-      <div className="row p-5">
-        <h1 className="text-center fs-2 text-muted">
+    <div className="container px-3 py-4 py-md-5">
+      <div className="row py-4 py-md-5">
+        <h1 className="text-center h3 text-muted px-2">
           We pioneered the discount broking model in India.
         </h1>
-        <h1 className="text-center fs-2 text-muted mb-5 pb-2">
+        <h1 className="text-center h3 text-muted mb-4 mb-md-5 pb-2 px-2">
           Now, we are breaking ground with our technology.
         </h1>
-        <hr className="text-muted mt-5" />
+        <hr className="text-muted mt-3 opacity-25" />
       </div>
-      <div className="row p-5">
-        <div className="col text-muted fw-medium lh-lg px-5">
+      <div className="row g-4 py-4 py-md-5">
+        <div className="col-12 col-lg-6 text-muted fw-medium lh-lg px-2 px-lg-4">
           <p>
             We kick-started operations on the 15th of August, 2010 with the goal
             of breaking all barriers that traders and investors face in India in
             terms of cost, support, and technology. We named the company
-            Zerodha, a combination of Zero and "Rodha", the Sanskrit word for
+            Zerodha, a combination of Zero and &quot;Rodha&quot;, the Sanskrit word for
             barrier.
           </p>
           <p>
@@ -31,7 +31,7 @@ function Hero() {
             15% of all Indian retail trading volumes.
           </p>
         </div>
-        <div className="col text-muted fw-medium lh-lg px-4">
+        <div className="col-12 col-lg-6 text-muted fw-medium lh-lg px-2 px-lg-4">
           <p>
             In addition, we run a number of popular open online educational and
             community initiatives to empower retail traders and investors.
@@ -61,7 +61,7 @@ function Hero() {
           </p>
         </div>
       </div>
-      <hr className="text-muted mt-3" />
+      <hr className="text-muted mt-3 opacity-25" />
     </div>
   );
 }

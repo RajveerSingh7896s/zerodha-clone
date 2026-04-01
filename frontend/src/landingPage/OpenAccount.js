@@ -4,15 +4,16 @@ import { useNavigate } from "react-router-dom";
 function OpenAccount() {
   const navigate = useNavigate();
   return (
-    <div className="container p-5 mb-2">
-      <div className="row text-center">
-        <h1 className="mt-5">Open a Zerodha account</h1>
-        <p>
+    <div className="container px-3 py-4 py-md-5 mb-2 section-y">
+      <div className="row text-center justify-content-center">
+        <h1 className="mt-3 h2">Open a Zerodha account</h1>
+        <p className="text-muted px-2 hero-lead mx-auto">
           Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and
-          F&O trades.
+          F&amp;O trades.
         </p>
         <button
-          className="p-2 btn fs-5 mb-5 allBtn"
+          type="button"
+          className="fs-6 mb-4 mb-md-5 allBtn"
           onClick={() => {if(localStorage.getItem("token") || sessionStorage.getItem("token")) {
             alert("You are already logged in , you can access dashboard");
           }else {

@@ -83,7 +83,7 @@ const Holdings = () => {
         </table>
       </div>
 
-      <div className="row">
+      <div className="row holdings-cols-3">
         <div className="col">
           <h5>
             29,875.<span>55</span>{" "}
@@ -101,7 +101,9 @@ const Holdings = () => {
           <p>P&L</p>
         </div>
       </div>
-      <VerticalGraph data={data} />
+      <div className="holdings-chart-wrap">
+        <VerticalGraph data={data} />
+      </div>
     </>
   );
 };

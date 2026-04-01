@@ -91,7 +91,9 @@ const WatchList = () => {
           return <WatchListItem stock={stock} key={index} />;
         })}
       </ul>
-      <DoughnutChart data={data} />
+      <div className="watchlist-chart-wrap" aria-label="Watchlist allocation chart">
+        <DoughnutChart data={data} />
+      </div>
     </div>
   );
 };
@@ -113,7 +115,7 @@ const WatchListItem = ({ stock }) => {
     <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <div className="item">
         <p className={stock.isDown ? "down" : "up"}>{stock.name}</p>
-        <div className="itemInfo">
+        <div className="item-info">
           <span className="percent">{stock.percent}</span>
           {stock.isDown ? (
             <KeyboardArrowDown className="down" />

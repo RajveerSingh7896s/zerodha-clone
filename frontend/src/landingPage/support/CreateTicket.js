@@ -2,15 +2,15 @@ import React from "react";
 
 function CreateTicket() {
   return (
-    <div className="container mb-5 py-5 ps-4">
+    <div className="container mb-4 mb-md-5 py-4 py-md-5 px-3 ps-md-4">
       <div className="row">
-        <h1 className="text-muted fs-4">
+        <h1 className="text-muted h4">
           To create a ticket, select a relevant topic
         </h1>
       </div>
-      <div className="row py-5">
+      <div className="row g-4 g-lg-5 py-4 row-cols-1 row-cols-md-3">
         <div className="col">
-          <h1 className="fs-5 fw-normal pb-3"><i class="fa-regular fa-square-plus fa-sm"></i> Account Opening</h1>
+          <h2 className="fs-6 fw-normal pb-3"><i className="fa-regular fa-square-plus fa-sm"></i> Account Opening</h2>
           <ul className="TicketList list-unstyled">
             <li>
               <a href="">Resident individual</a>
@@ -30,7 +30,7 @@ function CreateTicket() {
           </ul>
         </div>
         <div className="col">
-          <h1 className="fs-5 fw-normal pb-3"><i class="fa-regular fa-user fa-sm"></i> Your Zerodha Account</h1>
+          <h2 className="fs-6 fw-normal pb-3"><i className="fa-regular fa-user fa-sm"></i> Your Zerodha Account</h2>
           <ul className="TicketList list-unstyled">
             <li>
               <a href="">Your Profile</a>
@@ -50,7 +50,7 @@ function CreateTicket() {
           </ul>
         </div>
         <div className="col">
-          <h1 className="fs-5 fw-normal pb-3"><i class="fa-regular fa-chart-bar fa-sm"></i> Kite</h1>
+          <h2 className="fs-6 fw-normal pb-3"><i className="fa-regular fa-chart-bar fa-sm"></i> Kite</h2>
           <ul className="TicketList list-unstyled">
             <li>
               <a href="">IPO</a>
@@ -73,9 +73,9 @@ function CreateTicket() {
           </ul>
         </div>
       </div>
-      <div className="row">
+      <div className="row g-4 g-lg-5 row-cols-1 row-cols-md-3">
         <div className="col">
-          <h1 className="fs-5 fw-normal pb-3"><i class="fa-regular fa-envelope fa-sm"></i> Funds</h1>
+          <h2 className="fs-6 fw-normal pb-3"><i className="fa-regular fa-envelope fa-sm"></i> Funds</h2>
           <ul className="TicketList list-unstyled">
             <li>
               <a href="">Add money</a>
@@ -92,7 +92,7 @@ function CreateTicket() {
           </ul>
         </div>
         <div className="col">
-          <h1 className="fs-5 fw-normal pb-3"><i class="fa-regular fa-font-awesome fa-sm"></i> Console</h1>
+          <h2 className="fs-6 fw-normal pb-3"><i className="fa-regular fa-font-awesome fa-sm"></i> Console</h2>
           <ul className="TicketList list-unstyled">
             <li>
               <a href="">Portfolio</a>
@@ -115,7 +115,7 @@ function CreateTicket() {
           </ul>
         </div>
         <div className="col">
-          <h1 className="fs-5 fw-normal pb-3"><i class="fa-brands fa-nfc-directional fa-sm"></i> Coin</h1>
+          <h2 className="fs-6 fw-normal pb-3"><i className="fa-brands fa-nfc-directional fa-sm"></i> Coin</h2>
           <ul className="TicketList list-unstyled">
             <li>
               <a href="">Mutual funds</a>

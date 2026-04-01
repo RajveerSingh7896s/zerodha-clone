@@ -11,7 +11,7 @@ const Orders = () => {
   });
 
   return (
-    <div className="orders">
+    <div className="orders orders-page">
       {allOrders.length === 0 && (
         <div className="no-orders">
           <p>You haven't placed any orders today</p>

@@ -39,14 +39,7 @@ function SignUp() {
     <Box
       component={Paper}
       elevation={3}
-      sx={{
-        maxWidth: 400,
-        mx: "auto",
-        my: 5,
-        p: 4,
-        borderRadius: 2,
-        border: "1px solid #ddd",
-      }}
+      className="auth-card"
     >
       <Typography variant="h5" component="h2" gutterBottom textAlign="center">
         Sign Up

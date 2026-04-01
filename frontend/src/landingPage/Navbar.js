@@ -5,17 +5,17 @@ import axios from "axios";
 function Navbar() {
   const navigate = useNavigate();
   return (
-    <nav class="navbar navbar-expand-lg border-bottom">
-      <div class="container p-2">
-        <Link class="navbar-brand" to="/">
+    <nav className="navbar navbar-expand-lg border-bottom bg-white">
+      <div className="container py-2 px-3">
+        <Link className="navbar-brand" to="/">
           <img
             src="media/images/logo.svg"
             alt="Logo"
-            style={{ width: "20%" }}
+            className="navbar-logo"
           />
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -23,17 +23,18 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex" role="search">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <form className="d-flex ms-lg-auto" role="search">
+            <ul className="navbar-nav ms-lg-auto mb-2 mb-lg-0 align-items-lg-center">
               {(localStorage.getItem("token") ||
                 sessionStorage.getItem("token")) && (
-                <li class="nav-item px-3">
+                <li className="nav-item px-lg-3">
                   <a
-                    class="nav-link anchorTagMain"
+                    className="nav-link anchorTagMain"
                     aria-current="page"
+                    href="#"
                     onClick={(e) => {
                       e.preventDefault();
                       axios.post("https://stocktradingwebsitebackend.onrender.com/logout", {}, { withCredentials: true })
@@ -59,9 +60,9 @@ function Navbar() {
               )}
               {(!localStorage.getItem("token") &&
                 !sessionStorage.getItem("token")) && (
-                <li class="nav-item px-3">
+                <li className="nav-item px-lg-3">
                 <Link
-                  class="nav-link anchorTagMain"
+                  className="nav-link anchorTagMain"
                   aria-current="page"
                   to="/signup"
                 >
@@ -69,28 +70,28 @@ function Navbar() {
                 </Link>
               </li>
               )}
-              <li class="nav-item px-3">
-                <Link class="nav-link anchorTagMain" to="/about">
+              <li className="nav-item px-lg-3">
+                <Link className="nav-link anchorTagMain" to="/about">
                   About
                 </Link>
               </li>
-              <li class="nav-item px-3">
+              <li className="nav-item px-lg-3">
                 <Link
-                  class="nav-link anchorTagMain"
+                  className="nav-link anchorTagMain"
                   aria-current="page"
                   to="/products"
                 >
                   Products
                 </Link>
               </li>
-              <li class="nav-item px-3">
-                <Link class="nav-link anchorTagMain" to="/pricing">
+              <li className="nav-item px-lg-3">
+                <Link className="nav-link anchorTagMain" to="/pricing">
                   Pricing
                 </Link>
               </li>
-              <li class="nav-item px-3">
+              <li className="nav-item px-lg-3">
                 <Link
-                  class="nav-link anchorTagMain"
+                  className="nav-link anchorTagMain"
                   aria-current="page"
                   to="/support"
                 >
@@ -98,9 +99,10 @@ function Navbar() {
                 </Link>
               </li>
 
-              <li className="nav-item px-3 mt-1">
+              <li className="nav-item px-lg-3 pt-2 pt-lg-0">
                 <Link
                   to="#"
+                  className="d-inline-block"
                   onClick={(e) => {
                     e.preventDefault();
                     const token = localStorage.getItem("token"); // or check cookies
@@ -115,7 +117,7 @@ function Navbar() {
                 >
                   <img
                     src="media/images/kiteLogo.png"
-                    style={{ width: "25%" }}
+                    className="navbar-kite-icon"
                     alt="Dashboard"
                   />
                 </Link>

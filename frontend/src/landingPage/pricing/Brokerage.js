@@ -2,13 +2,13 @@ import React from "react";
 
 function Brokerage() {
   return (
-    <div className="container border-top p-5 mb-5">
-      <div className="row">
-        <div className="col-8 text-muted">
-          <h3 className="text-center p-4 fs-5" style={{ color: "#387ed1" }}>
+    <div className="container border-top px-3 py-4 py-md-5 mb-4 mb-md-5">
+      <div className="row g-4">
+        <div className="col-12 col-lg-8 text-muted">
+          <h3 className="text-center text-lg-start p-3 p-lg-4 fs-5 heading-brand">
             Brokerage calculator
           </h3>
-          <ul className="lh-lg fw-medium" style={{ fontSize: "0.9em" }}>
+          <ul className="lh-lg fw-medium list-compact ps-3 mb-0">
             <li>
               Call & Trade and RMS auto-squareoff: Additional charges of ₹50 +
               GST per order.
@@ -32,8 +32,8 @@ function Brokerage() {
             </li>
           </ul>
         </div>
-        <div className="col-4">
-          <h3 className="text-center p-4 fs-5" style={{ color: "#387ed1" }}>
+        <div className="col-12 col-lg-4">
+          <h3 className="text-center text-lg-start p-3 p-lg-4 fs-5 heading-brand">
             List of charges
           </h3>
         </div>
